@@ -52,4 +52,4 @@ jobs:
         pm2 kill
         cd /home/ec2-user/system-analyses/
         pm2 start npm --name "system-analyses" -- start -- --port 3000
-        
+        .
