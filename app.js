@@ -25,7 +25,7 @@ app.use('/users', usersRouter);
 // Создание маршрута API /api/test
 app.get('/api/test', function(req, res) {
   // Обработка запросов по маршруту /api/test
-  res.json({ message: 'Это тестовый маршрут API' });
+  res.json({ message: 'Это тестовый маршрут API asfafiro' });
 });
 
 // catch 404 and forward to error handler
