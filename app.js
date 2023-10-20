@@ -22,6 +22,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/api/test', function(req, res) {
+  // Обработка запросов по маршруту /api/test
+  res.json({ message: 'Это тестовый маршрут API' });
+});
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
